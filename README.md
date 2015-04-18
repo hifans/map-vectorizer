@@ -46,6 +46,9 @@ A few things to be installed in your system in order to work properly. So far it
     * `igraph`
     * `shapefiles`
     * `rgdal` (download the [binary for your OS](http://cran.r-project.org/web/packages/rgdal/index.html) then run `R CMD INSTALL --configure-args="" path/to/rgdal.tar.gz`)
+      安装成功后，但使用library(rgdal)检验时出错。使用
+         install.packages('rgdal', type='source')再次安装也没有成功，说是差个X11之类的包。
+         无奈放弃，再次library(rgdal)竟然成功。
     * On the CLI (by typing `R` in a terminal window) you will know you have all the required dependencies if you can run this with no errors:
 
 ```
